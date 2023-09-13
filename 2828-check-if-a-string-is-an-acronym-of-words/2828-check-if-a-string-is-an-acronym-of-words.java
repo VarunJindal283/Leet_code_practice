@@ -3,9 +3,6 @@ class Solution {
         String t="";
         for(int i=0;i<words.size();i++){
             t=t+words.get(i).charAt(0);
-            if(!(s.contains(t))){
-                return false;
-            }
         }
         if(t.equals(s)){
             return true;
