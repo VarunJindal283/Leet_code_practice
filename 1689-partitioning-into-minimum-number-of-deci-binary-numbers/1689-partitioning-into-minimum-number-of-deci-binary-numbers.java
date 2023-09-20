@@ -5,6 +5,9 @@ class Solution {
             if(((int)(n.charAt(i)-'1')+1)>ans){
                 ans=(int)(n.charAt(i)-'1')+1;
             }
+            if(ans==9){
+                return ans;
+            }
         }
         return ans;
     }
