@@ -6,7 +6,7 @@ class Solution {
             if(nums[i]%2==0){
                 i++;
             }
-            if(nums[j]%2!=0){
+            else if(nums[j]%2!=0){
                 j--;
             }
             else{
@@ -14,6 +14,7 @@ class Solution {
                 nums[i]=nums[j];
                 nums[j]=temp;
                 i++;
+                j--;
             }
         }
         return nums;
