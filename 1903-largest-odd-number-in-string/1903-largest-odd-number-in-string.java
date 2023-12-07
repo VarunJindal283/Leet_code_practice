@@ -1,12 +1,12 @@
 class Solution {
     public String largestOddNumber(String num) {
-        int i=num.length() - 1;
-        while(i >= 0){
-            int rem=(int)(num.charAt(i));
+        int i=0;
+        while(num.length()>i){
+            int rem=(int)(num.charAt(num.length()-i-1));
             if(rem%2!=0){
-                return num.substring(0,i + 1);
+                return num.substring(0,num.length()-i);
             }
-            i--;
+            i++;
         }
         return "";
     }
