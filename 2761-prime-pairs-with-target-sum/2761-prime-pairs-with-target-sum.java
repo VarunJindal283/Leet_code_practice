@@ -27,6 +27,18 @@ class Solution {
         {
             return false;
         }
+        if(num>5){
+            if(num%2==0){
+            return false;
+        }
+        else if(num%3==0){
+            return false;
+        }
+        else if(num%5==0){
+            return false;
+        }
+        }
+        
        for(int i=2;i<=Math.sqrt(num);i++)
        {
            if((num%i)==0)
