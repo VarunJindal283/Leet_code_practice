@@ -7,7 +7,7 @@ class Solution {
                 smax=max;
                 max=value;
             }
-            else if(smax<value && value<=max){
+            else if(smax<value){
                 smax=value;
             }
         }
