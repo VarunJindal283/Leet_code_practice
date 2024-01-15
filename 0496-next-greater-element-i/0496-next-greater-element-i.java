@@ -17,12 +17,13 @@ class Solution {
             }
         }
         int[] ans=new int[nums1.length];
+        HashMap<Integer,Integer> map=new HashMap<>();
+        for(int i=0;i<n;i++){
+            map.put(nums2[i],i);
+        }
         for(int i=0;i<nums1.length;i++){
-            for(int j=0;j<n;j++){
-                if(nums1[i]==nums2[j]){
-                    ans[i]=num2d[j];
-                }
-            }
+            int x=map.get(nums1[i]);
+            ans[i]=num2d[x];
         }
         return ans;
     }
