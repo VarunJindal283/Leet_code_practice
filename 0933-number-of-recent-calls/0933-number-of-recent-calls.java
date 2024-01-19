@@ -15,6 +15,9 @@ class RecentCounter {
             if(list.get(list.size()-i-1)<=upper && list.get(list.size()-i-1)>=lower){
                 ans++;
             }
+            else{
+                break;
+            }
         }
         return ans;
     }
