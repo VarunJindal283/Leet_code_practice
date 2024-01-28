@@ -9,13 +9,11 @@ class Solution {
             set1.add(nums2[i]);
         }
         List<Integer> list2=new ArrayList<>(set1);
-        for(int i=0;i<list2.size();){
+        for(int i=0;i<list2.size();i++){
             if(set.contains(list2.get(i))){
                 set.remove(list2.get(i));
                 list2.remove(i);
-            }
-            else{
-                i++;
+                i--;
             }
         }
         List<Integer> list1=new ArrayList<>(set);
