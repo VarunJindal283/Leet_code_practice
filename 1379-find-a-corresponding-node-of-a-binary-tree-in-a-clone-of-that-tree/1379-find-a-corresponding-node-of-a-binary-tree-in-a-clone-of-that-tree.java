@@ -10,6 +10,9 @@
 
 class Solution {
     public final TreeNode getTargetCopy(final TreeNode original, final TreeNode cloned, final TreeNode target) {
+        if(cloned.val==target.val){
+            return cloned;
+        }
         Queue<TreeNode> queue=new LinkedList<>();
         queue.add(cloned);
         while(!(queue.isEmpty())){
